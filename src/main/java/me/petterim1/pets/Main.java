@@ -14,6 +14,7 @@ import me.petterim1.pets.entities.PetCat;
 import me.petterim1.pets.entities.PetChicken;
 import me.petterim1.pets.entities.PetDog;
 import me.petterim1.pets.entities.PetRabbit;
+import me.petterim1.pets.entities.PetVex;
 
 import java.util.Map;
 
@@ -165,7 +166,7 @@ public class Main extends PluginBase implements Listener {
                     sender.sendMessage("\u00A7d>> \u00A7cPet not found");
                     return true;
                 case "list":
-                    sender.sendMessage("\u00A7d>> \u00A7aAvailable pets: \u00A76Cat, Dog, Chicken");
+                    sender.sendMessage("\u00A7d>> \u00A7aAvailable pets: \u00A76Cat, Dog, Chicken, Rabbit and Vex!");
                     return true;
                 default:
                     sender.sendMessage("\u00A7d* \u00A7aPets \u00A7d*");
@@ -227,6 +228,7 @@ public class Main extends PluginBase implements Listener {
         Entity.registerEntity("PetDog", PetDog.class);
         Entity.registerEntity("PetChicken", PetChicken.class);
 		Entity.registerEntity("PetRabbit", PetRabbit.class);
+		Entity.registerEntity("PetVex", PetVex.class);
     }
 
     String getNameTagColor() {
